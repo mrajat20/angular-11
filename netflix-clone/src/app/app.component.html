@@ -1,0 +1,39 @@
+<header class="nav">
+  <!-- logo + navitems -->
+  <div class="nav-left-div">
+    <img width="110" src="../assets/pngwing.com (2).png" alt="netflix-logo">
+    <ul class="nav-items" *ngFor="let item of navList">
+      <li class="nav-list">{{item}}</li>
+    </ul>
+  </div>
+  <!-- logo + navitems ends -->
+
+  <!-- headre rightSide elements starts -->
+  <div class="nav-right-div">
+    <div style="display: flex; align-items: center; gap: 10px;" >
+      <div class="container-input">
+        <input type="text" placeholder="Search..." name="text" class="input" [(ngModel)]="st" (click)="search()">
+        <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+          <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+      </svg>
+    </div>
+      <a style="margin-top: 5px;" class="user-txt" href="/"> <span class="user-txt">Welcome  <strong class="user-txt">Rajat</strong></span></a>
+      <img style="margin-left: 10px;" src="../assets/84c20033850498.56ba69ac290ea.png" width="30" alt="user-logo">
+      &nbsp; | &nbsp;
+      <a class="user-txt" href="/">signout</a>
+    </div>
+  </div>
+</header>
+<!-- headre rightSide elements ends -->
+
+
+<!-- main page starts -->
+<div class="movies-main">
+  <div class="moviee" *ngFor="let content of movieData">
+    <img src={{content.Poster}} alt={{content.Title}}>
+    <h2 style="color: white; margin-top: 10px;">{{content.Title}}</h2>
+    <p style="color: white; margin-top: 10px;">Released: <strong>{{content.Year}}</strong></p>
+  </div>
+</div>
+<!-- main page ends -->
+

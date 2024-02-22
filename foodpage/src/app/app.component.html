@@ -1,0 +1,17 @@
+
+<h1>Student Registration Form</h1>
+   
+
+<div class="box">
+    <input type="text" [(ngModel)]="name" placeholder="Enter your name here"> <br><br>
+    <input type="email" [(ngModel)]="em" placeholder="Enter your email here"><br><br>
+    <input type="password" [(ngModel)]="pass" placeholder="Enter your password here">
+    <button class="sign-btn" (click)="show()">Sign up</button>
+</div>
+
+
+<div class="box">
+    <P>Your name: {{name}}</P>
+    <P>Your email: {{em}}</P>
+    <P>Your password: {{pass}}</P>
+</div>

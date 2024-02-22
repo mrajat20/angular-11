@@ -1,0 +1,86 @@
+
+.foods img{
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.foods img:hover {
+    transform: scale(0.9);
+    z-index: 5;
+}
+
+.items{
+    color: black;
+    margin-left: 10px;
+}
+
+.add-btn{
+    width: 175px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3em 1.5em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.add-btn:hover {
+    background-color: white;
+    box-shadow: 0px 15px 20px black;
+    color: black;
+    transform: translateY(-7px);
+}
+  
+.add-btn:active {
+    transform: translateY(-1px);
+}
+
+.qnt-btn{
+    width: 40px;
+    height: 22px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.qnt-btn:hover {
+    background-color: white;
+    box-shadow: 0px 15px 20px black;
+    color: black;
+    transform: translateY(-7px);
+}
+  
+.qnt-btn:active {
+    transform: translateY(-1px);
+}

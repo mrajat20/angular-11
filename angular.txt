@@ -1,0 +1,19 @@
+component: Componenet is the logical division of user interface.
+
+Each componenet will have 4 files
+
+
+
+
+
+component communication:
+
+1. parent to child
+    parent will send the data to child as a property and child will recieve it as    @Input ()
+
+
+16\02\2024
+
+    2. child to perent :
+
+        \\  note : import it from the angular only

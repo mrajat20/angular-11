@@ -1,0 +1,87 @@
+<h1>Hello Everyone 👋</h1>
+
+<div class="Primary-btn">
+  <button (click)="counter()" class="main-btn">Counter</button>
+  <button (click)="form()" class="main-btn">Form</button>
+  <button (click)="switch()" class="main-btn">Switch</button>
+</div>
+
+
+
+<div *ngIf="counterBox then c1 "></div>
+  <div>
+    <ng-template #c1>
+      <h1 class="passenger-txt">Passenger Counting App</h1>
+      <div class="counter">
+        <p><strong class="upartext" [class] = "{'gr':evenFlag}">{{numIsEven}}</strong></p>
+        <h2>
+          count: <span class="count">{{count}}</span>
+        </h2>
+    
+        <div class="btn-container">
+          <button class="btn-wrapper" (click)="increase()">Passenger In</button>
+          <button class="btn-wrapper" (click)="decrease()">Passenger Out</button>
+          <button class="btn-wrapper" (click)="reset()">Reset</button>
+        </div>
+      </div>
+    </ng-template>
+  
+
+
+ <!-- form box  -->
+<div *ngIf="formBox then b1"></div>
+<ng-template #b1>
+  <app-header (rajat)="receive($event)"></app-header>
+  <h1> This is parent component</h1>
+  <button class="sign-btn" (click)="recieved()">Sign up</button>
+</ng-template>
+<!-- form box ends here  -->
+
+
+<!-- switch app code starts here -->
+<div *ngIf="switchBox then d1 "></div>
+<ng-template #d1>
+  <h1>Weaks</h1>
+  <div class="container">
+    <input required="" type="number" class="input" [(ngModel)]="value" name="text">
+    <label class="label">Type number here</label>
+  </div>
+    <div [ngSwitch]="value">
+      <p *ngSwitchCase='0' class="switch-txt">Sunday</p>
+      <p *ngSwitchCase='1' class="switch-txt">Monday</p>
+      <p *ngSwitchCase='2' class="switch-txt">Tuesday</p>
+      <p *ngSwitchCase='3' class="switch-txt">Wednesday</p>
+      <p *ngSwitchCase='4' class="switch-txt">Thusday</p>
+      <p *ngSwitchCase='5' class="switch-txt">Friday</p>
+      <p *ngSwitchCase='6' class="switch-txt">Saturday</p>
+      <p *ngSwitchCase='7' class="switch-txt">Sunday</p>
+      <p *ngSwitchDefault="" class="switch-txt">Wrong Input</p>
+    </div>
+
+</ng-template>
+<!-- switch app code starts here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- form box ends here -->
+
+

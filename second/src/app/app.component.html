@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Passenger Counting App</h1>
+  <div class="counter">
+    <p><strong class="upartext" [class] = "{'gr':evenFlag}">{{numIsEven}}</strong></p>
+    <h2>
+      count: <span class="count">{{count}}</span>
+    </h2>
+
+    <div class="btn-container">
+      <button class="btn-wrapper" (click)="increase()">Passenger In</button>
+      <button class="btn-wrapper" (click)="decrease()">Passenger Out</button>
+      <button class="btn-wrapper" (click)="reset()">Reset</button>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<header>
+  <div class="header">
+    <h1 class="black-lives-matter">Wanna have some drink!! 🍸</h1>
+    <div class="cart-container">
+      <img style="margin-left: 10px;" src="../assets/Lovepik_com-380042466-cartoon-version-of-supermarket-shopping-cart-purchase-icon.png" width="100px" height="100px" alt="user-logo">
+      <span class="cart-count">{{cartCouont}}</span>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="wines">
+  <div class="wine" *ngFor="let w of winess">
+    <div class="book">
+      <h2 class="texts">{{w.wine}}</h2>
+      <h3 class="texts">{{w.winery}}</h3>
+      <h4 class="texts">{{w.location}}</h4>
+      <button (click)="add()">Add to cart</button>
+      <button (click)="remove()">Remove</button>
+    <div class="cover">
+      <img class="wine-img" src={{w.image}} alt={{w.title}}>
+    </div>
+    </div>
+  </div>
+</div>

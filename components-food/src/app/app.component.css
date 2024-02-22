@@ -1,0 +1,65 @@
+
+
+h1{
+    text-align: center;
+    font-size: 5em;
+    font-family: serif;
+    color: transparent;
+    text-align: center;
+    animation: effect 2s linear infinite;
+    font-size: 40px;
+}
+@keyframes effect {
+    0% {
+        background: linear-gradient(#ff0000, #c9db20);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(#1bf507, #ffffff);
+        -webkit-background-clip: text;
+    }
+}
+
+
+#foods-row1{
+    display: flex;
+    justify-content: space-between;
+    overflow:scroll;
+}
+
+#foods-row2{
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+}
+.movie{
+    display: none;
+}
+
+header{
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    box-shadow: 5px 5px 5px rgb(73, 33, 33);
+}
+
+.header-img{
+    height: 70px;
+    margin-left: 10px;
+}
+footer{
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+
+
+}
+.links{
+    color: rgb(145, 7, 7);
+}

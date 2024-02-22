@@ -1,0 +1,19 @@
+<!-- <div class="main-form">
+    <button (click)="increase()">+</button>
+    <button (click)="decrease()">-</button>
+    <button (click)="reset()">reset</button>
+</div> -->
+
+<h1> student Registration Form </h1>
+<div class="box">
+    <input type="text" [(ngModel)]="name" placeholder="Enter your name here"> <br><br>
+    <input type="email" [(ngModel)]="em" placeholder="Enter your email here"><br><br>
+    <input type="password" [(ngModel)]="pass" placeholder="Enter your password here">
+</div>
+
+
+<div class="box">
+    <P>Your name: {{name}}</P>
+    <P>Your email: {{em}}</P>
+    <P>Your password: {{pass}}</P>
+</div>
